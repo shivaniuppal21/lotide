@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   else { 
     console.log(`Assertion Failed: ${actual} !== ${expected}`);
   }
-  greturn assertEqual};  
+  return assertEqual};  
 
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp"); 
