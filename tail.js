@@ -7,9 +7,13 @@ const assertEqual = function(actual, expected) {
     }
     return assertEqual};  
 
-    const tail = function(array)
-  {
-      return (array.slice(1))
+const tail = function(array){
+  if(array.length === 1 || array.length === 0){
+    return []
+  } else {
+    return (array.slice(1))
+  }
+      
   };
   
 
@@ -25,3 +29,7 @@ const assertEqual = function(actual, expected) {
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words); // no need to capture the return value since we are not checking it
 assertEqual(words.length, 3); //
+
+const check = tail([1]);
+tail(check)
+assertEqual(check.length, 1)
