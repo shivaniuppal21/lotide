@@ -10,6 +10,9 @@ const eqArrays = function(actual, expected) {
   }
   return false;
 };
+
+
+
 const assertArraysEquals = function(actual, expected) {
   if (eqArrays(actual,expected)) {
     console.log("The arrays are identical!");
@@ -19,5 +22,7 @@ const assertArraysEquals = function(actual, expected) {
   return assertArraysEquals;
 };
 
+module.exports = assertArraysEquals;
+module.exports = eqArrays;
 
-assertArraysEquals([1, 2, 3], [1, 2, 3]);
+//assertArraysEquals([1, 2, 3], [1, 2, 3]);
